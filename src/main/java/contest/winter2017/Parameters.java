@@ -27,9 +27,11 @@ public class Parameters {
 	}
 
 	/**
-	 * Method to find out if this parameter is an enumeration or not, 
-	 * meaning that there are multiple options associated with this parameter
-	 * @return boolean true if this parameter is an enumeration, false if it is not
+	 * Method to find out if this parameter is an enumeration or not, meaning
+	 * that there are multiple options associated with this parameter
+	 * 
+	 * @return boolean true if this parameter is an enumeration, false if it is
+	 *         not
 	 */
 	public static boolean isEnumeration(Map inputMap) {
 		return inputMap.get("enumerated values") != null;
@@ -37,6 +39,7 @@ public class Parameters {
 
 	/**
 	 * Getter for type of parameter (integer, long, double, float, String, etc)
+	 * 
 	 * @return
 	 */
 	public static Class getType(Map inputMap) {
@@ -47,6 +50,7 @@ public class Parameters {
 
 	/**
 	 * Getter for the format string the parameter has if it has a specific one
+	 * 
 	 * @return String with the parameters format <<REPLACE_ME_...>> are included
 	 */
 	public static String getFormat(Map inputMap) {
@@ -56,27 +60,30 @@ public class Parameters {
 	/**
 	 * Getter for enumeration values (if this parameter is an enumeration)
 	 * 
-	 * @return List<String> containing multiple options associated with this parameter
+	 * @return List<String> containing multiple options associated with this
+	 *         parameter
 	 */
 	@SuppressWarnings("unchecked")
 	public static List<String> getEnumerationValues(Map inputMap) {
 		return (List<String>) inputMap.get("enumerated values");
 	}
-	
+
 	/**
-	* Getter for the min value associated with this parameter (if one exists)
-	* 
-	* @return Object representing the minimum value associated with this parameter
-	*/
+	 * Getter for the min value associated with this parameter (if one exists)
+	 * 
+	 * @return Object representing the minimum value associated with this
+	 *         parameter
+	 */
 	public static Object getMin(Map inputMap) {
 		return inputMap.get("min");
 	}
 
 	/**
-	* Getter for the max value associated with this parameter (if one exists)
-	* 
-	* @return Object representing the maximum value associated with this parameter
-	*/
+	 * Getter for the max value associated with this parameter (if one exists)
+	 * 
+	 * @return Object representing the maximum value associated with this
+	 *         parameter
+	 */
 	public static Object getMax(Map inputMap) {
 		return inputMap.get("max");
 	}

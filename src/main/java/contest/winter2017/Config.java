@@ -47,11 +47,12 @@ public class Config {
 		this.saveStdout = saveStdout;
 	}
 
-	@Override 
+	@Override
 	public String toString() {
 		Yaml yaml = new Yaml();
 		return yaml.dump(this);
 	}
+
 	private static Config INSTANCE;
 
 	static {

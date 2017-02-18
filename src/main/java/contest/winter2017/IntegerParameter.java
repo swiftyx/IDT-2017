@@ -8,9 +8,8 @@ public class IntegerParameter extends ContinuousParameter<Integer> {
 
 	@SuppressWarnings("rawtypes")
 	public IntegerParameter(Map inputMap) {
-		super(inputMap,
-          IntegerGenerator.makeByBound((Integer) Parameters.getMin(inputMap),
-                                 (Integer) Parameters.getMax(inputMap)));
+		super(inputMap, IntegerGenerator.makeByBound((Integer) Parameters.getMin(inputMap),
+				(Integer) Parameters.getMax(inputMap)));
 	}
 
 }

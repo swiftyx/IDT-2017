@@ -21,7 +21,6 @@ public class PatternRecognizer {
 
 	public void analyze(Output output) {
 		String out = output.getStdOutString();
-		String err = output.getStdErrString();
 		List<String> options = getEnumeration(out);
 		if (options != null) {
 			int idx = out.indexOf(options.get(0));

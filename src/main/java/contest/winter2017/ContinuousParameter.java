@@ -22,7 +22,7 @@ public class ContinuousParameter<E> extends Parameter {
 	List<Generator> generators() {
 		return generators;
 	}
-	
+
 	@Override
 	public String next() {
 		return generator.nextFormatted();

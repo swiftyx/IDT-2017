@@ -8,7 +8,7 @@ import com.google.common.base.MoreObjects;
 import contest.winter2017.parameter.Generator;
 
 /**
- * Class that represents a single parameter for an executable jar. 
+ * Class that represents a single parameter for an executable jar.
  * 
  * @author IDT
  */
@@ -21,7 +21,9 @@ public abstract class Parameter {
 
 	/**
 	 * Ctr for Parameter
-	 * @param inputMap - map containing parameter meta data
+	 * 
+	 * @param inputMap
+	 *            - map containing parameter meta data
 	 */
 	@SuppressWarnings("rawtypes")
 	public Parameter(Map inputMap) {
@@ -30,6 +32,7 @@ public abstract class Parameter {
 
 	/**
 	 * Getter for the optionality of the parameter
+	 * 
 	 * @return boolean true indicates the parameter is optional
 	 */
 	public boolean isOptional() {
@@ -44,8 +47,8 @@ public abstract class Parameter {
 	public String toString() {
 		return MoreObjects.toStringHelper(this).add("inputMap", inputMap).toString();
 	}
-	
-	abstract List<Generator> generators(); 
+
+	abstract List<Generator> generators();
 
 	public abstract String next();
 }

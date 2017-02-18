@@ -29,11 +29,8 @@ public class MainTest {
 	}
 
 	private void runMain(String name, int bbTests, int timeGoal) {
-		Main.runMain(Config.i().getJacocoAgentJarPath(),
-                 Config.i().getJacocoOutputPath(),
-                 Config.i().getJarsDir() + "/" + name + ".jar",
-                 Integer.toString(bbTests),
-                 Integer.toString(timeGoal),
-                 false);
+		Main.runMain(Config.i().getJacocoAgentJarPath(), Config.i().getJacocoOutputPath(),
+				Config.i().getJarsDir() + "/" + name + ".jar", Integer.toString(bbTests), Integer.toString(timeGoal),
+				false);
 	}
 }

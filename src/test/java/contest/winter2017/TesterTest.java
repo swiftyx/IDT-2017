@@ -22,13 +22,13 @@ public class TesterTest {
 		t.instrumentAndExecuteCode(input.split(" "));
 	}
 
-  @Test
-  public void test10sProcess() {
-    String input = "--Integer 1";
-    Tester t = create(JAR_TesterTypeCheck);
-    t.instrumentAndExecuteCode(input.split(" "));
-  }
-  
+	@Test
+	public void test10sProcess() {
+		String input = "--Integer 1";
+		Tester t = create(JAR_TesterTypeCheck);
+		t.instrumentAndExecuteCode(input.split(" "));
+	}
+
 	@Test
 	public void testRegexPatternMatchSecurityTests() {
 		create(JAR_RegexPatternMatch, 100).executeSecurityTests();
@@ -49,25 +49,26 @@ public class TesterTest {
 		create(JAR_CommandLineEncryption, 100).executeSecurityTests();
 	}
 
-  @Test
-  public void testRegexPatternMatchBasicTests() {
-    create(JAR_RegexPatternMatch, 100).executeBasicTests();
-  }
+	@Test
+	public void testRegexPatternMatchBasicTests() {
+		create(JAR_RegexPatternMatch, 100).executeBasicTests();
+	}
 
-  @Test
-  public void testLeetConverterBasicTests() {
-    create(JAR_LeetConverter, 20).executeBasicTests();
-  }
+	@Test
+	public void testLeetConverterBasicTests() {
+		create(JAR_LeetConverter, 20).executeBasicTests();
+	}
 
-  @Test
-  public void testTesterTypeCheckBasicTests() {
-    create(JAR_TesterTypeCheck, 50).executeBasicTests();
-  }
+	@Test
+	public void testTesterTypeCheckBasicTests() {
+		create(JAR_TesterTypeCheck, 50).executeBasicTests();
+	}
 
-  @Test
-  public void testCommandLineEncryptionBasicTests() {
-    create(JAR_CommandLineEncryption, 100).executeBasicTests();
-  }
+	@Test
+	public void testCommandLineEncryptionBasicTests() {
+		create(JAR_CommandLineEncryption, 100).executeBasicTests();
+	}
+
 	/**
 	 * Prints paramter meta data for test jars.
 	 */
@@ -96,7 +97,8 @@ public class TesterTest {
 	}
 
 	/**
-	 * If an whitespace string like " " is added as parameter, endless recursion might occur.
+	 * If an whitespace string like " " is added as parameter, endless recursion
+	 * might occur.
 	 */
 	@Test
 	public void endlessRecursion() {
@@ -126,17 +128,11 @@ public class TesterTest {
 		}
 	}
 
-
-	private Tester create(String name, int bbTests)  {
+	private Tester create(String name, int bbTests) {
 		System.out.printf("## %s\n", name);
 		Tester t = new Tester();
-		t.init(Config.i().getJarsDir()	+ "/"
-				+ name
-				+ ".jar",
-				Config.i().getJacocoOutputPath(),
-				Config.i().getJacocoAgentJarPath(),
-				bbTests,
-				-1);
+		t.init(Config.i().getJarsDir() + "/" + name + ".jar", Config.i().getJacocoOutputPath(),
+				Config.i().getJacocoAgentJarPath(), bbTests, -1);
 		return t;
 	}
 
