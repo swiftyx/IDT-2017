@@ -12,8 +12,8 @@ Project for IDT Winter 2017 Contest by [Swifty X](https://github.com/swiftyx)
 1. Open Command Prompt. That is PowerShell/cmd on Windows, or Terminal on macOS.
 2. Download and navigate to the source code folder, using the following commands.
 ```
-git clone https://github.com/swiftyx/com.idtus.contest.winter2017.framework.git
-cd com.idtus.contest.winter2017.framework
+git clone https://github.com/swiftyx/IDT-2017.git
+cd IDT-2017/com.idtus.contest.winter2017.framework
 ```
 
 ### Build Using Gradle
