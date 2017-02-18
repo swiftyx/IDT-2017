@@ -1,0 +1,19 @@
+{
+	[
+		{
+			parameters:[
+				"fun",
+			],
+			stdOutExpectedResultRegex:".*|=|_|/\\/.*",
+			stdErrExpectedResultRegex:""
+		},
+		{
+			parameters:[
+				"fun",
+			],
+			stdOutExpectedResultRegex:".*|=|_|/\\/.*",
+			stdErrExpectedResultRegex:""
+		}
+	]
+	
+}

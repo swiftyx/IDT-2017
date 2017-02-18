@@ -1,0 +1,99 @@
+# Characters
+x
+\\
+\07
+\023
+\0177
+\x45
+\u1000
+\x{100}
+\t
+\n
+\r
+\f
+\a
+\e
+\cx
+# Character classes
+[abc]
+[^abc]
+[a-zA-Z]
+[a-d[m-p]]
+[a-z&&[def]]
+[a-z&&[^bc]]
+[a-z&&[^m-p]]
+# Predefined character classes
+.
+\d
+\D
+\h
+\H
+\s
+\S
+\v
+\V
+\w
+\W
+# POSIX character classes (US-ASCII only)
+\p{Lower}
+\p{Upper}
+\p{ASCII}
+\p{Alpha}
+\p{Digit}
+\p{Alnum}
+\p{Punct}
+\p{Graph}
+\p{Print}
+\p{Blank}
+\p{Cntrl}
+\p{XDigit}
+\p{Space}
+# java.lang.Character classes (simple java character type)
+\p{javaLowerCase}
+\p{javaUpperCase}
+\p{javaWhitespace}
+\p{javaMirrored}
+# Classes for Unicode scripts, blocks, categories and binary properties
+\p{IsLatin}
+\p{InGreek}
+\p{Lu}
+\p{IsAlphabetic}
+\p{Sc}
+\P{InGreek}
+[\p{L}&&[^\p{Lu}]]
+# Boundary matchers
+^
+$
+\b
+\B
+\A
+\G
+\Z
+\z
+# Linebreak matcher
+\R
+# Greedy quantifiers
+X?
+X*
+X+
+X{8}
+X{8,}
+X{1,3}
+# Reluctant quantifiers
+X??
+X*?
+X+?
+X{1}?
+X{2,}?
+X{1,8}?
+# Possessive quantifiers
+X?+
+X*+
+X++
+X{8}+
+X{8,}+
+X{8,9}+
+# Logical operators
+XY
+X|Y
+(X)

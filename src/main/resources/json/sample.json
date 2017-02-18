@@ -1,0 +1,20 @@
+[
+    {
+        "parameters":[
+            "sample parma1",
+            "sample parma2",
+            "sample parma3"
+        ],
+        "stdOutExpectedResultRegex":"expected passed result",
+        "stdErrExpectedResultRegex":"expected failed result"
+    },
+    {
+        "parameters":[
+            "sample parma4",
+            "sample parma5",
+            "sample parma6"
+        ],
+        "stdOutExpectedResultRegex":"expected passed result",
+        "stdErrExpectedResultRegex":"expected failed result"
+    }
+]

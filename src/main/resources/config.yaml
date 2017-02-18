@@ -1,0 +1,11 @@
+# Directory where the test jars are placed
+jarsDir: /idt_contest/jars
+
+# Same meaning as the corresponding command line option
+jacocoOutputPath: /idt_contest/jacoco
+
+# Same meaning as the corresponding command line option
+jacocoAgentJarPath: /idt_contest/jacoco/lib/jacocoagent.jar
+
+# Save stdout to log files
+saveStdout: true
